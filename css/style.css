@@ -1,0 +1,433 @@
+/*=========== Common Css Start =================*/
+
+*{
+    margin: 0;
+    padding:0;
+   
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+
+.container{
+    width: 1320px;
+    margin:0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/*=============== Common Css end =====================*/
+
+/* ============Short Cut Area============= */
+
+.pop{
+    font-family: 'Poppins', sans-serif;
+}
+
+.frank{
+    font-family:'Frank Ruhl Libre', serif;
+}
+
+.pod{
+    font-family: 'Podkova', serif;
+}
+
+.font-16{
+    font-size:16px;
+}
+.font-22{
+    font-size:22px;
+}
+
+.font-24{
+    font-size:24px;
+}
+
+.font-28{
+    font-size:28px;
+}
+
+.font-34{
+    font-size:34px;
+}
+
+.font-64{
+    font-size:64px;
+}
+
+.font-regular{
+    font-weight: 400;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+/*============ Short Cut Area=================*/
+
+/* ===========Navbar Area Start ==================*/
+
+nav{
+    padding:46px 0;
+    background: #FAE3B6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
+.logo{
+    width:15%;
+    text-align: left;
+   
+
+}
+
+nav .flex{
+    align-items: center;
+}
+
+.navitem{
+    display: flex;
+    width:60%;
+    align-items: center;
+    justify-content: center; 
+   
+}
+
+.navitem ul{
+    column-gap: 59px;
+}
+
+.navitem ul li a{
+    color:#000000;
+    text-transform: capitalize;
+}
+
+
+
+.buttons{
+    width:25%;
+    text-align: right;
+}
+
+.buttons a{
+    display:inline-block;
+    border:1px solid  #FFD687;
+    padding:10px 28px;
+    margin-left: 15px;
+    color:#000000;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.buttons a:hover{
+    background: #FDBB57;
+}
+/* =========Navbar Area End ==================*/
+/* =========Banner Area Start ==================*/
+
+.banner{
+    background: #FAE3B6;
+    padding-top: 220px;
+    padding-bottom: 102px;
+}
+
+.banner .left{
+    width:50%;}
+
+.banner .left h1{
+    width:500px;
+}
+
+.banner .left p{
+    margin-top:38px;
+    width:531px;
+    margin-bottom:76px;
+}
+
+.banner .left a{
+    text-transform: uppercase;
+    background: #000;
+    color:#fff;
+    padding:25px 95px;
+    display: inline-block;
+    border-radius:10px;
+}
+
+.banner .right{
+    position:relative;
+    width:50%;  
+    display: flex;
+    justify-content: end;
+}
+
+.banner .right .bannerimg{
+    border-bottom-left-radius: 195px; 
+    z-index: 2;
+    animation: blackandwhite 3s infinite alternate;
+}
+
+.banner .right .bannerdot{
+    position:absolute;
+    bottom:0;
+    left:0; 
+    z-index: 1;
+    animation: moveleft 3s infinite alternate;
+}
+
+@keyframes moveleft{
+     from{
+        left:0;
+        bottom:0;
+     }
+     to{
+        left:31px;
+        bottom:70%;
+     }
+}
+
+@keyframes blackandwhite{
+     from{
+        filter: grayscale(0);
+     }
+     to{
+        filter: grayscale(1);
+     }
+}
+
+/* ============== Banner Area End ==================*/
+/* ========= Collection Area Start ==================*/
+
+.collection .title{
+    text-align: center;
+    margin-top:150px;
+    margin-bottom: 28px;
+}
+
+.collection .flex{
+    justify-content: space-between;
+}
+
+.collection .item{
+    width:30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.collection .item img{
+    width:100%;
+    display: block;
+}
+
+.collection .item .name{
+    text-align: center;
+    background: white;
+    width:90%;
+    position: absolute;
+    bottom:-61px;
+    left:50%;
+    transform: translate(-50%);
+    padding:10px 0;
+    border-radius:20px;
+    transition: .4s;
+}
+
+.collection .item:hover .name{
+    bottom:15px;
+}
+
+/* ========= Collection Area End ==================*/
+/* ============== Fashion Area Start ==================*/
+.fashion{
+    margin-top:188px;
+    margin-bottom: 168px;
+}
+
+.fashion .flex{
+    column-gap:130px; 
+}
+
+.fashion-left{
+    position: relative;
+    width:50%;
+}
+
+.fashion-left .fashion-img{
+    border-top-left-radius: 195px;
+    animation: blackandwhite1 3s infinite alternate;
+}
+
+@keyframes blackandwhite1{
+    from{
+       filter: grayscale(0);
+    }
+    to{
+       filter: grayscale(1);
+    }
+}
+
+
+.fashion-left .fashion-shape{
+    position: absolute;
+    right:-88px;
+    top:-61px;
+    z-index: -1;
+    animation: moveleft1 7s infinite alternate;
+}
+
+@keyframes moveleft1{
+    from{
+       right:-88px;
+       top:-61px;
+    }
+    to{
+       right:-88px;
+       top:70%;
+    }
+}
+
+.fashion-right{
+    position: relative;
+    width:40%;
+}
+
+.fashion-right .amr{
+    margin-top:90px;
+   
+}
+
+.fashion-right .sonar{
+    
+    margin-top:63px;
+    margin-bottom: 132px;
+    padding-right: 180px;
+}
+
+.fashion-right .info {
+    position: absolute;
+    top: 631px;
+    z-index: -1;
+    right: 76px;
+}
+
+.fashion-right .flex {
+    width:610px; 
+    background: #FAE3B6;
+    column-gap: 10px;
+    border-radius: 20px;
+}
+
+.fashion-right .flex  .item{
+   padding:35px;
+   text-align: center;
+   position: relative;
+}
+
+.fashion-right .flex  .item::after{
+   content:'';
+   width: 2px;
+   height:50%;
+   background-color: #000;
+   position: absolute;
+   top:25px;
+   right: 0;
+}
+
+.fashion-right .flex  .item:last-child::after{
+   content:'';
+   width: 2px;
+   height:50%;
+   background-color: #000;
+   position: absolute;
+   top:25px;
+   right: 0;
+   display: none;
+}
+
+/* ============== Fashion Area End ==================*/
+/* ========= Seller Area Start ==================*/
+
+#seller{
+    
+    background: #CFA485;
+    color:white;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+#seller .flex{
+    column-gap: 31px;
+}
+
+#seller .seller-left{
+    width:35%;
+}
+
+#seller .seller-left p{
+    margin-top: 43px;
+    margin-bottom: 40px;
+}
+
+#seller .seller-left a{
+    padding:25px 100px;
+    background: black;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#seller .seller-right{
+    width:65%;
+}
+
+#seller .seller-right .flex{
+   column-gap: 31px;
+}
+
+#seller .seller-right .item-1{
+    width: 47%;
+    background-color: #fff;
+    color: #000;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+#seller .seller-right .item-1 img{
+    display: inline-block;
+    width: 100%;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+#seller .seller-right .flex .item-1 .flex{
+    column-gap: 7px;
+    padding-left: 22px;
+}
+#seller .seller-right .flex .item-1 h3{
+    padding-left: 22px;
+}
+
+#seller .seller-right .flex .item-1 .flex i{
+    color:#FFAF37;   
+}
+
+#seller .seller-right .blacks{
+    color:#C4C4C4;
+    margin-right: 31px;  
+    padding-left: 22px; 
+}
+

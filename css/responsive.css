@@ -1,0 +1,26 @@
+@media  (min-width:320px) and (max-width:991px){
+   
+   .container{
+    width:100%;
+   }
+
+  nav{
+    display: none;
+   }
+
+   .banner .left{
+    width:100%;
+   }
+
+  .banner .left h1{
+      width:auto;
+    font-size: 24px;}
+
+  .banner .left p{
+    width:auto;
+    font-size: 16px;}
+
+
+
+
+}
